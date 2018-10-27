@@ -1,6 +1,13 @@
 @font-face {
 
   font-family: ProductSans;
-  src: url(ProductSans.ttf);
+  src: url(ProductSans.woff2);
+
+}
+
+@font-face {
+
+  font-family: ProductSansThin;
+  src: url(ProductSans-ProductSansThin.woff2);
 
 }
