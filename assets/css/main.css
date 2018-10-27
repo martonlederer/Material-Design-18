@@ -79,6 +79,12 @@ nav .menu-trigger i {
 
 }
 
+nav .menu-trigger .close {
+
+  display: none;
+
+}
+
 nav h1 {
 
   color: #fff;
@@ -112,8 +118,8 @@ nav h1 img {
   background-color: #fff;
   overflow-x: hidden;
   padding-top: 85px;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
 
 }
 
@@ -122,7 +128,7 @@ nav h1 img {
   display: block;
   color: #5f6368;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: normal;
   padding: 10px 5px 10px 20px;
   background-color: rgba(0, 0, 0, 0);
   transition: background-color .2s ease-out;
@@ -163,8 +169,33 @@ nav h1 img {
 .main {
 
   padding: 15px 30px 15px 30px;
-  transition: margin-left .5s;
-  -webkit-transition: margin-left .5s;
+  transition: margin-left .3s;
+  -webkit-transition: margin-left .3s;
+
+}
+
+.name {
+
+  color: #1a73e8;
+  font-weight: normal;
+  font-size: 55px;
+  text-align: center;
+
+}
+
+.name img {
+
+  width: 60px;
+  height: 60px;
+
+}
+
+.sub-name-desc {
+
+  color: #5f6368;
+  font-weight: normal;
+  font-size: 28px;
+  text-align: center;
 
 }
 
