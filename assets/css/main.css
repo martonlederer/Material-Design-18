@@ -47,6 +47,7 @@ nav {
   position: fixed;
   width: 100%;
   height: 40px;
+  z-index: 1000;
   padding: 13px 30px 13px 30px;
   -webkit-box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.23);
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.23);
@@ -100,6 +101,58 @@ nav h1 img {
 
 }
 
+.sidenav {
+
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 85px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+
+}
+
+.sidenav a {
+
+  display: block;
+  color: #5f6368;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 5px 10px 20px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color .2s ease-out;
+  -webkit-transition: background-color .2s ease-out;
+
+}
+
+.sidenav a:hover {
+
+  background-color: #e0e0e0;
+  transition: background-color .2s ease-out;
+  -webkit-transition: background-color .2s ease-out;
+
+}
+
+.sidenav a i {
+
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+.sidenav a span {
+
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
 .nav-protector {
 
   width: 100%;
@@ -110,6 +163,8 @@ nav h1 img {
 .main {
 
   padding: 15px 30px 15px 30px;
+  transition: margin-left .5s;
+  -webkit-transition: margin-left .5s;
 
 }
 
@@ -153,14 +208,6 @@ a {
 .button:hover {
 
   background-color: rgba(26, 115, 232, 0.07);
-  transition: all .2s ease-out;
-  -webkit-transition: all .2s ease-out;
-
-}
-
-.button:focus {
-
-  background-color: rgba(26, 115, 232, 0.2);
   transition: all .2s ease-out;
   -webkit-transition: all .2s ease-out;
 
@@ -229,5 +276,11 @@ a {
   background-color: #e35633;
   box-shadow: 0 1px 1px 0 rgba(227, 86, 51, 0.45), 0 1px 3px 1px rgba(227, 86, 51, 0.3);
   -webkit-box-shadow: 0 1px 1px 0 rgba(227, 86, 51, 0.45), 0 1px 3px 1px rgba(227, 86, 51, 0.3);
+
+}
+
+.waves-effect.waves-light-blue .waves-ripple {
+
+  background-color: rgba(26, 115, 232, 0.34);
 
 }
