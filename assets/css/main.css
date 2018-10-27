@@ -169,8 +169,9 @@ nav h1 img {
 .main {
 
   padding: 15px 30px 15px 30px;
-  transition: margin-left .3s;
-  -webkit-transition: margin-left .3s;
+  width: calc(100vw - 60px);
+  transition: .3s;
+  -webkit-transition: .3s;
 
 }
 

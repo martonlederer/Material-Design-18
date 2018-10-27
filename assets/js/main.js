@@ -11,6 +11,7 @@ $(document).ready(function() {
 
       $("#sidenav").css("width", "0");
       $("#main").css("margin-left", "0");
+      $("#main").css("width", "calc(100vw - 60px)");
 
       $("#menuTrigger .close").fadeOut();
       $("#menuTrigger .menu").fadeIn();
@@ -21,6 +22,7 @@ $(document).ready(function() {
 
       $("#sidenav").css("width", "250px");
       $("#main").css("margin-left", "250px");
+      $("#main").css("width", "calc(100vw - 310px)");
 
       $("#menuTrigger .menu").fadeOut();
       $("#menuTrigger .close").fadeIn();
