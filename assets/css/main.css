@@ -4,6 +4,7 @@ body {
 
   margin: 0;
   font-family: 'ProductSans', arial, sans-serif;
+  font-weight: normal;
   background-color: #eee;
   overflow-x: hidden;
 
@@ -126,6 +127,7 @@ nav h1 img {
 
 .sidenav a {
 
+  font-family: 'Roboto', sans-serif;
   display: block;
   color: #5f6368;
   font-size: 18px;
@@ -173,6 +175,7 @@ nav h1 img {
   width: calc(100vw - 60px);
   transition: .3s;
   -webkit-transition: .3s;
+  overflow-x: auto;
 
 }
 
@@ -194,6 +197,7 @@ nav h1 img {
 
 .sub-name-desc {
 
+  font-family: 'Roboto', sans-serif;
   color: #5f6368;
   font-weight: normal;
   font-size: 28px;
@@ -206,6 +210,16 @@ nav h1 img {
   color: #5f6368;
   font-weight: 500;
   font-size: 25px;
+
+}
+
+.subtitle {
+
+  font-family: 'Roboto', sans-serif;
+  color: #5f6368;
+  font-weight: normal;
+  font-size: 18px;
+  max-width: 65%;
 
 }
 
@@ -299,6 +313,14 @@ a {
 
 }
 
+.button.floating {
+
+  border-radius: 50% 50% !important;
+  width: 45px;
+  height: 45px;
+
+}
+
 .button.primary:hover {
 
   background-color: #287ae6;
@@ -346,21 +368,78 @@ a {
 .button i {
 
   font-size: 1.3rem;
-  transform: translate(-50%, 20%);
+  transform: translate(-50%, 30%);
   margin-left: 5px;
-  margin-right: -10px;
+  margin-right: -12px;
+
+}
+
+.button.floating i {
+
+  font-size: 1.3rem;
+  margin: 0;
+  transform: translate(-20%, 30%);
 
 }
 
 .code {
 
   display: block;
-  width: 50%;
-  height: 40px;
+  width: 65%;
+  height: 45px;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 4px;
   border: 1px solid #E2E0E2;
   outline: none;
   resize: none;
+
+}
+
+.youtube-video {
+
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+
+}
+
+.youtube-video iframe {
+
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+
+}
+
+.video-presentation {
+
+  width: 560px;
+  margin: 0 auto;
+
+}
+
+@media screen and (max-width: 790px) {
+
+  .code {
+
+    width: 90%;
+    height: 65px;
+
+  }
+
+  .subtitle {
+
+    max-width: 90%;
+
+  }
+
+  .video-presentation {
+
+    width: 90%;
+
+  }
 
 }

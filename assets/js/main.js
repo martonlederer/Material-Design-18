@@ -31,4 +31,11 @@ $(document).ready(function() {
 
   });
 
+  $(".code").click(function() {
+
+  	this.select();
+  	document.execCommand("copy");
+
+  });
+
 });
