@@ -421,6 +421,96 @@ a {
 
 }
 
+.input-field {
+
+  position: relative;
+  width: 260px;
+
+}
+
+.field-label {
+
+  position: relative;
+  margin: 0;
+  display: block;
+  color: #757575;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-transform: translateY(24px);
+  -ms-transform: translateY(24px);
+  transform: translateY(24px);
+  -webkit-transition: -webkit-transform 0.3s, color 0.3s;
+  transition: transform 0.3s, color 0.3s;
+  -webkit-transform-origin: 0 50%;
+  -ms-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+
+}
+
+.field-input {
+
+  position: relative;
+  display: block;
+  height: 25px;
+  width: 100%;
+  padding: 0 0 8px 0;
+  line-height: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  -webkit-appearance: none;
+  outline: none;
+
+}
+
+.input-field::after, .input-field::before {
+
+  content: '';
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  background-color: rgba(0,0,0,0.12);
+
+}
+
+.input-field::after {
+
+  background-color: #1a73e8;
+  height: 2px;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+
+}
+
+.has-label .field-label {
+
+  -webkit-transform: translateY(0) scale(0.75);
+  -ms-transform: translateY(0) scale(0.75);
+  transform: translateY(0) scale(0.75);
+
+}
+
+.is-focused .field-label {
+
+  color: #1a73e8;
+
+}
+
+.input-field.is-focused::after {
+
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+
+}
+
 @media screen and (max-width: 790px) {
 
   .code {
@@ -437,6 +527,12 @@ a {
   }
 
   .video-presentation {
+
+    width: 90%;
+
+  }
+
+  .input-field {
 
     width: 90%;
 
