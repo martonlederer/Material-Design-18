@@ -1,3 +1,8 @@
+/* Material '18 by MartonDev
+  https://martondev.github.io/Material-Design-18/
+  Licensed under the MIT license
+ */
+
 @import "fonts/ProductSans.css";
 
 body {
@@ -391,6 +396,9 @@ a {
   border: 1px solid #E2E0E2;
   outline: none;
   resize: none;
+  font-family: Consolas, monaco, monospace;
+  color: #000;
+  font-size: 14px;
 
 }
 
@@ -579,6 +587,24 @@ textarea {
   -webkit-box-shadow: 0 1px 1px 0 rgba(163, 163, 163, 0.73), 0 1px 3px 1px rgba(163, 163, 163, 0.67);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+
+}
+
+h1 {
+
+  font-size: 20px;
+  font-weight: normal;
+  color: #5f6368;
+
+}
+
+.character-counter {
+
+  font-size: 13px;
+  font-weight: normal;
+  color: #5f6368;
+  margin: 0 auto auto auto;
+  transition: color .2;
 
 }
 

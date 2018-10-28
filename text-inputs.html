@@ -17,11 +17,11 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/material.min.css" />
     <link rel="stylesheet" href="assets/css/waves.min.css" />
 
     <script src="assets/js/waves.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/material.min.js"></script>
 
   </head>
 
@@ -125,6 +125,20 @@
       <input type="text" class="shadowed-input" placeholder="Shadowed input" />
 
       <textarea class="code" style="height: 70px" readonly><input type="text" class="shadowed-input" placeholder="Shadowed input" /></textarea>
+
+      <h1>Count characters</h1>
+      <p class="subtitle">Set the count attribute of the H1 tag above to the id of the input, you want to count. This will work with any type of text input.</p>
+
+      <div class="input-field">
+
+        <label for="idOfInputToCount" class="field-label">Write to count characters</label>
+        <input type="text" id="idOfInputToCount" class="field-input">
+
+      </div>
+
+      <h1 class="character-counter" countChar="idOfInputToCount"></h1>
+
+      <textarea class="code" style="height: 70px" readonly><h1 class="character-counter" count="idOfInputToCount"></h1></textarea>
 
     </div>
 
