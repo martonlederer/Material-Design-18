@@ -386,11 +386,17 @@ a {
 
   display: block;
   width: 65%;
-  height: 45px;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 4px;
   border: 1px solid #E2E0E2;
   outline: none;
+  resize: none;
+
+}
+
+textarea {
+
+  min-height: 45px;
   resize: none;
 
 }
@@ -425,6 +431,42 @@ a {
 
   position: relative;
   width: 260px;
+
+}
+
+.input-field.success .field-label {
+
+  color: #64dd17;
+
+}
+
+.input-field.success::after, .input-field.success::before {
+
+  background-color: #64dd17;
+
+}
+
+.input-field.warning .field-label {
+
+  color: #ffab00;
+
+}
+
+.input-field.warning::after, .input-field.warning::before {
+
+  background-color: #ffab00;
+
+}
+
+.input-field.error .field-label {
+
+  color: #dd2c00;
+
+}
+
+.input-field.error::after, .input-field.error::before {
+
+  background-color: #dd2c00;
 
 }
 
@@ -508,6 +550,35 @@ a {
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1);
+
+}
+
+.shadowed-input {
+
+  outline: none;
+  border: none;
+  background: #fff;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 8px 12px;
+  margin: 7px 2px;
+  min-width: 250px;
+  color: #5f6368;
+  font-family: 'ProductSans', arial, sans-serif;
+  font-weight: normal;
+  box-shadow: 0 1px 1px 0 rgba(163, 163, 163, 0.33), 0 1px 3px 1px rgba(163, 163, 163, 0.27);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(163, 163, 163, 0.33), 0 1px 3px 1px rgba(163, 163, 163, 0.27);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+
+}
+
+.shadowed-input:focus {
+
+  box-shadow: 0 1px 1px 0 rgba(163, 163, 163, 0.73), 0 1px 3px 1px rgba(163, 163, 163, 0.67);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(163, 163, 163, 0.73), 0 1px 3px 1px rgba(163, 163, 163, 0.67);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 
 }
 
