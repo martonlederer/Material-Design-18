@@ -66,6 +66,7 @@ nav .menu-trigger {
   color: #fff;
   font-size: 25px;
   text-decoration: none;
+  cursor: pointer;
   margin: 0;
   width: 35px;
   height: 35px;
@@ -174,9 +175,34 @@ nav h1 img {
 
 }
 
+footer {
+
+  padding: 20px 50px 20px 50px;
+  width: calc(100vw - 60px);
+  background-color: #c8c8c8;
+  position: relative;
+  transition: .3s;
+  -webkit-transition: .3s;
+
+}
+
+footer .title {
+
+  font-size: 25px;
+
+}
+
+footer .author {
+
+  font-size: 17px;
+  text-align: right;
+  margin-right: 20px;
+
+}
+
 .main {
 
-  padding: 15px 30px 15px 30px;
+  padding: 15px 30px 25px 30px;
   width: calc(100vw - 60px);
   transition: .3s;
   -webkit-transition: .3s;
