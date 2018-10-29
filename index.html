@@ -51,6 +51,18 @@
       <h1 class="name"><img src="assets/img/icon.png" /><br />Material '18</h1>
       <h1 class="sub-name-desc">A library for the Material Design 2018 edition</h1>
 
+      <p class="latest-commit" id="latestCommit"></p>
+
+      <script>
+
+        $.get("https://api.github.com/repos/MartonDev/Material-Design-18/commits/master", function(data) {
+
+          $("#latestCommit").html('Latest <a href="https://github.com/MartonDev/Material-Design-18" target="_blank">github</a> commit: ' + data["sha"] + ' - ' + data["commit"]["message"]);
+
+        });
+
+      </script>
+
       <div class="video-presentation">
 
         <div class="youtube-video">
