@@ -179,7 +179,6 @@ nav h1 img {
 footer {
 
   padding: 20px 50px 20px 50px;
-  width: calc(100vw - 60px);
   background-color: #c8c8c8;
   position: relative;
   transition: .3s;
@@ -708,6 +707,99 @@ input[type="checkbox"].warning + label::before {
 input[type="checkbox"].error + label::before {
 
   color: #dd2c00;
+
+}
+
+select {
+
+  display: none;
+
+}
+
+.dropdown-header {
+
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 7px 2px;
+  min-width: 250px;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0 1px 1px 0 rgba(163, 163, 163, 0.33), 0 1px 3px 1px rgba(163, 163, 163, 0.27);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(163, 163, 163, 0.33), 0 1px 3px 1px rgba(163, 163, 163, 0.27);
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+
+}
+
+.dropdown-header:hover {
+
+  box-shadow: 0 1px 1px 0 rgba(163, 163, 163, 0.73), 0 1px 3px 1px rgba(163, 163, 163, 0.67);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(163, 163, 163, 0.73), 0 1px 3px 1px rgba(163, 163, 163, 0.67);
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+
+}
+
+.dropdown-header h1 {
+
+  font-size: 16px;
+  color: #5f6368;
+  display: inline-block;
+  margin: 0;
+
+}
+
+.dropdown-header i {
+
+  font-size: 18px;
+  color: #5f6368;
+  float: right;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+
+}
+
+.dropdown ul {
+
+  display: none;
+  position: absolute;
+  z-index: 100;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 7px;
+  background-color: #fff;
+  padding: 0;
+  margin: 0 2px;
+  max-height: 400px;
+  overflow-y: auto;
+  box-shadow: 0 1px 1px 0 rgba(163, 163, 163, 0.33), 0 1px 3px 1px rgba(163, 163, 163, 0.27);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(163, 163, 163, 0.33), 0 1px 3px 1px rgba(163, 163, 163, 0.27);
+  transition: all .3s;
+  -webkit-transition: all .3s;
+
+}
+
+.dropdown ul li {
+
+  cursor: pointer;
+  padding: 4px 11px;
+  color: #5f6368;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  display: block;
+  background-color: #fff;
+  transition: background-color .4s;
+  -webkit-transition: background-color .4s;
+
+}
+
+.dropdown ul li:hover {
+
+  background-color: #e2e2e2;
+  transition: background-color .4s;
+  -webkit-transition: background-color .4s;
 
 }
 
