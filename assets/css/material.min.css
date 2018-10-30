@@ -686,7 +686,7 @@ input[type="checkbox"] + label {
 
 }
 
-input[type="checkbox"]:disabled  + label {
+input[type="checkbox"]:disabled + label {
 
   cursor: default;
 
@@ -772,7 +772,7 @@ select {
   background-color: #fff;
   padding: 0;
   margin: 0 2px;
-  max-height: 400px;
+  max-height: 300px;
   overflow-y: auto;
   box-shadow: 0 1px 1px 0 rgba(163, 163, 163, 0.33), 0 1px 3px 1px rgba(163, 163, 163, 0.27);
   -webkit-box-shadow: 0 1px 1px 0 rgba(163, 163, 163, 0.33), 0 1px 3px 1px rgba(163, 163, 163, 0.27);
@@ -800,6 +800,73 @@ select {
   background-color: #e2e2e2;
   transition: background-color .4s;
   -webkit-transition: background-color .4s;
+
+}
+
+input[type="radio"] {
+
+  display: none;
+
+}
+
+input[type="radio"] + span {
+
+  color: #5f6368;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 2px;
+  cursor: pointer;
+
+}
+
+input[type="radio"] + span::before {
+
+  font-family: 'Material Icons';
+  font-size: 16px;
+  content: "radio_button_unchecked";
+  margin-right: 8px;
+  line-height: 16px;
+  display: inline-block;
+  vertical-align: sub;
+  color: #1a73e8;
+
+}
+
+input[type="radio"]:disabled + span {
+
+  color: #5f6368;
+  cursor: default;
+
+}
+
+input[type="radio"]:disabled + span::before {
+
+  color: #5f6368;
+
+}
+
+input[type="radio"]:checked + span::before {
+
+  content: "radio_button_checked";
+  animation: check .14s ease-in;
+
+}
+
+input[type="radio"].success + span::before {
+
+  color: #64dd17;
+
+}
+
+input[type="radio"].warning + span::before {
+
+  color: #ffab00;
+
+}
+
+input[type="radio"].error + span::before {
+
+  color: #dd2c00;
 
 }
 
