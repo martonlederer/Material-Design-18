@@ -59,8 +59,8 @@
       </div>
 
       <textarea class="code" style="height: 70px" readonly><div class="checkbox-field">
-      <input type="checkbox" id="checkbox" />
-      <label for="checkbox">Normal checkbox</label>
+    <input type="checkbox" id="checkbox" />
+    <label for="checkbox">Normal checkbox</label>
 </div></textarea>
 
       <div class="checkbox-field">
@@ -71,8 +71,8 @@
       </div>
 
       <textarea class="code" style="height: 70px" readonly><div class="checkbox-field">
-      <input type="checkbox" id="disabledCheckbox" disabled />
-      <label for="disabledCheckbox">Disabled checkbox</label>
+    <input type="checkbox" id="disabledCheckbox" disabled />
+    <label for="disabledCheckbox">Disabled checkbox</label>
 </div></textarea>
 
       <div class="checkbox-field">
@@ -83,8 +83,8 @@
       </div>
 
       <textarea class="code" style="height: 70px" readonly><div class="checkbox-field">
-      <input type="checkbox" class="success" id="successCheckbox" />
-      <label for="successCheckbox">Success checkbox</label>
+    <input type="checkbox" class="success" id="successCheckbox" />
+    <label for="successCheckbox">Success checkbox</label>
 </div></textarea>
 
       <div class="checkbox-field">
@@ -95,8 +95,8 @@
       </div>
 
       <textarea class="code" style="height: 70px" readonly><div class="checkbox-field">
-      <input type="checkbox" class="warning" id="warningCheckbox" />
-      <label for="warningCheckbox">Warning checkbox</label>
+    <input type="checkbox" class="warning" id="warningCheckbox" />
+    <label for="warningCheckbox">Warning checkbox</label>
 </div></textarea>
 
       <div class="checkbox-field">
@@ -107,13 +107,13 @@
       </div>
 
       <textarea class="code" style="height: 70px" readonly><div class="checkbox-field">
-      <input type="checkbox" class="error" id="errorCheckbox" />
-      <label for="errorCheckbox">Error checkbox</label>
+    <input type="checkbox" class="error" id="errorCheckbox" />
+    <label for="errorCheckbox">Error checkbox</label>
 </div></textarea>
 
       <h1>Dropdowns</h1>
 
-      <select id="select" select-title="Select title" required>
+      <select id="select" select-title="Select title">
 
         <option value="1">1</option>
         <option value="2">2</option>
@@ -136,23 +136,23 @@
       </select>
 
       <textarea class="code" style="height: 70px" readonly><select id="select" select-title="Select title">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
-      <option value="11">11</option>
-      <option value="12">12</option>
-      <option value="13">13</option>
-      <option value="14">14</option>
-      <option value="15">15</option>
-      <option value="16">16</option>
-      <option value="17">17</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
 </select></textarea>
 
       <h1>Radio buttons</h1>
@@ -215,6 +215,89 @@
         </p>
 
       </form>
+
+      <textarea class="code" style="height: 200px" readonly><label>
+    <input name="group1" type="radio" checked />
+    <span>Normal</span>
+</label>
+<label>
+  <input name="group1" type="radio" disabled />
+  <span>Disabled</span>
+</label>
+<label>
+  <input name="group1" type="radio" class="success" />
+  <span>Success</span>
+</label>
+<label>
+  <input name="group1" type="radio" class="warning" />
+  <span>Warning</span>
+</label>
+<label>
+  <input name="group1" type="radio" class="error" />
+  <span>Error</span>
+</label></textarea>
+
+      <h1>Sliders</h1>
+
+      <div class="range-control">
+
+        <input type="range" min="0" max="100" step="1" value="0" data-thumbwidth="20">
+        <output name="rangeVal">0</output>
+
+      </div>
+
+      <textarea class="code" style="height: 70px" readonly><div class="range-control">
+  <input type="range" min="0" max="100" step="1" value="0" data-thumbwidth="20">
+  <output name="rangeVal">0</output>
+</div></textarea>
+
+      <div class="range-control">
+
+        <input type="range" min="0" max="100" step="1" value="0" data-thumbwidth="20" disabled>
+        <output name="rangeVal">0</output>
+
+      </div>
+
+      <textarea class="code" style="height: 70px" readonly><div class="range-control">
+  <input type="range" min="0" max="100" step="1" value="0" data-thumbwidth="20" disabled>
+  <output name="rangeVal">0</output>
+</div></textarea>
+
+      <div class="range-control success">
+
+        <input type="range" min="0" max="100" step="1" value="0" data-thumbwidth="20">
+        <output name="rangeVal">0</output>
+
+      </div>
+
+      <textarea class="code" style="height: 70px" readonly><div class="range-control success">
+  <input type="range" min="0" max="100" step="1" value="0" data-thumbwidth="20">
+  <output name="rangeVal">0</output>
+</div></textarea>
+
+      <div class="range-control warning">
+
+        <input type="range" min="0" max="100" step="1" value="0" data-thumbwidth="20">
+        <output name="rangeVal">0</output>
+
+      </div>
+
+      <textarea class="code" style="height: 70px" readonly><div class="range-control warning">
+  <input type="range" min="0" max="100" step="1" value="0" data-thumbwidth="20">
+  <output name="rangeVal">0</output>
+</div></textarea>
+
+      <div class="range-control error">
+
+        <input type="range" min="0" max="100" step="1" value="0" data-thumbwidth="20">
+        <output name="rangeVal">0</output>
+
+      </div>
+
+      <textarea class="code" style="height: 70px" readonly><div class="range-control error">
+  <input type="range" min="0" max="100" step="1" value="0" data-thumbwidth="20">
+  <output name="rangeVal">0</output>
+</div></textarea>
 
     </div>
 

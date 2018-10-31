@@ -870,6 +870,148 @@ input[type="radio"].error + span::before {
 
 }
 
+.range-control {
+
+  position: relative;
+  width: 250px;
+
+}
+
+.range-control input[type="range"]:disabled::-webkit-slider-thumb {
+
+  background: #d3d3d3;
+
+}
+
+.range-control input[type="range"]:disabled::-moz-range-thumb {
+
+  background: #d3d3d3;
+
+}
+
+input[type=range]:disabled:active + output {
+
+  opacity: 0;
+  transform: scale(0);
+
+}
+
+.range-control.success input[type="range"]::-webkit-slider-thumb {
+
+  background: #64dd17;
+
+}
+
+.range-control.success input[type="range"]::-moz-range-thumb {
+
+  background: #64dd17;
+
+}
+
+.range-control.success output {
+
+  background-color: #64dd17;
+
+}
+
+.range-control.warning input[type="range"]::-webkit-slider-thumb {
+
+  background: #ffab00;
+
+}
+
+.range-control.warning input[type="range"]::-moz-range-thumb {
+
+  background: #ffab00;
+
+}
+
+.range-control.warning output {
+
+  background-color: #ffab00;
+
+}
+
+.range-control.error input[type="range"]::-webkit-slider-thumb {
+
+  background: #dd2c00;
+
+}
+
+.range-control.error input[type="range"]::-moz-range-thumb {
+
+  background: #dd2c00;
+
+}
+
+.range-control.error output {
+
+  background-color: #dd2c00;
+
+}
+
+input[type="range"] {
+
+  width: 100%;
+  height: 2px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #d3d3d3;
+  outline: none;
+
+}
+
+input[type="range"]::-webkit-slider-thumb {
+
+  -webkit-appearance: none;
+  appearance: none;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #1a73e8;
+  cursor: pointer;
+
+}
+
+input[type="range"]::-moz-range-thumb {
+
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #1a73e8;
+  cursor: pointer;
+
+}
+
+.range-control output {
+
+  position: absolute;
+  top: -32px;
+  width: 33px;
+  background-color: #1a73e8;
+  border-radius: 50% 50%;
+  color: #fff;
+  padding-top: calc((33px - 16px) / 2);
+  padding-bottom: calc((33px - 16px) / 2);
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0) translateX(-50%) translateY(50%);
+  transition: left .06s, opacity .3s, transform .3s;
+  -webkit-transition: left .06s, opacity .3s, transform .3s;
+
+}
+
+input[type=range]:active + output {
+
+  opacity: 1;
+  transform: scale(1) translateX(-50%) translateY(-10%);
+  transition: left .06s, opacity .3s, transform .3s;
+  -webkit-transition: left .06s, opacity .3s, transform .3s;
+
+}
+
 @media screen and (max-width: 790px) {
 
   .code {
