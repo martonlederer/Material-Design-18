@@ -48,40 +48,60 @@
 
     <div id="main" class="main">
 
-      <h1 class="name"><img src="assets/img/icon.png" /><br />Material '18</h1>
-      <h1 class="sub-name-desc">A library for the Material Design 2018 edition</h1>
-
-      <p class="latest-commit" id="latestCommit"></p>
-
-      <script>
-
-        $.get("https://api.github.com/repos/MartonDev/Material-Design-18/commits/master", function(data) {
-
-          $("#latestCommit").html('Latest <a href="https://github.com/MartonDev/Material-Design-18" target="_blank">github</a> commit: ' + data["sha"] + ' - ' + data["commit"]["message"]);
-
-        });
-
-      </script>
-
-      <div class="video-presentation">
-
-        <div class="youtube-video">
-
-          <iframe src="https://www.youtube.com/embed/NPjzUyax4tw" allowfullscreen></iframe>
-
-        </div>
-
-      </div>
-
       <div class="qna">
 
-        <h1 class="title">What is material design?</h1>
-        <p>Material Design, created by Google, is a design, made for better understanding. With many colors and motions, Material Design is now one of the leader design forms, and is used on many devices and websites. <br />In 2018, Google announced a brand new look for the Material Design. They have created the ProductSans font, the redesign of the old official Material font, Roboto and made many changes in the design.</p>
+        <h1 class="title">Setup material design</h1>
 
-        <br />
+        <p>
+          Go through the steps of installing Material '18 library.
 
-        <h1 class="title">Can I contribute either this website or the library?</h1>
-        <p>Yes, you absolutely can! One of my main goals is to make a library 100% free, and managed by the community. Please make a pull request on GitHub and I'll try to check it and pull it as soon as possible.</p>
+          <ol>
+
+            <li>To set up Material '18, you first have to download the library, from <a href="https://github.com/MartonDev/Material-Design-18/releases" target="_blank">here</a>. Keep in mind, we only support the latest release of Material '18!</li>
+            <li>After you downloaded it, extract it to your project folder. The project structure will look like this: <br /><textarea class="code" style="height: 300px" readonly>MyProject/
+  |--assets/
+  |  |--css/
+  |  |  |--fonts/
+  |  |  |  |--ProductSans.css
+  |  |  |  |--ProductSans.woff2
+  |  |  |
+  |  |  |--material.min.css
+  |  |  |--waves.min.css
+  |  |
+  |  |--img/
+  |  |  |--icon.png
+  |  |
+  |  |--js/
+  |     |--material.min.js
+  |     |--waves.min.js
+  |
+  |--index.html
+  |--setup.html
+  |--buttons.html
+  |--text-inputs.html
+  |--other-inputs.html
+  |--LICENSE
+  |--README.md</textarea></li>
+
+            <li>Now you have Material '18 installed. You can now use it 2 ways. You can use the default layout (used by the index.html file) or you can create a brand new file and include the css and js libraries.</li>
+
+          </ol>
+
+        </p>
+
+        <h1 class="title">Credits</h1>
+        <p>Libraries used:
+
+          <ul>
+
+            <li>Waves.js (<a href="http://fian.my.id/Waves/" target="_blank">official site</a>)</li>
+            <li>jQuery (<a href="https://jquery.com/" target="_blank">official site</a>)</li>
+            <li>Material Icons (<a href="https://fonts.google.com/" target="_blank">official site</a>)</li>
+            <li>Google Fonts (<a href="https://fonts.google.com/" target="_blank">official site</a>)</li>
+
+          </ul>
+
+        </p>
 
       </div>
 

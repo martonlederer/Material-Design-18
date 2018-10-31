@@ -986,6 +986,7 @@ input[type="range"]::-moz-range-thumb {
 
 .range-control output {
 
+  font-family: 'Roboto', sans-serif;
   position: absolute;
   top: -32px;
   width: 33px;
@@ -1013,6 +1014,12 @@ input[type=range]:active + output {
 
 }
 
+.qna {
+
+  padding: 10px 20% 10px 20%;
+
+}
+
 @media screen and (max-width: 790px) {
 
   .code {
@@ -1037,6 +1044,12 @@ input[type=range]:active + output {
   .input-field {
 
     width: 90%;
+
+  }
+
+  .qna {
+
+    padding: 10px 5% 10px 5%;
 
   }
 
