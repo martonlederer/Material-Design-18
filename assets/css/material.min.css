@@ -241,6 +241,7 @@ footer .author {
   font-size: 18px;
   text-align: center;
   color: #5291e3;
+  word-wrap: break-word;
 
 }
 
