@@ -873,6 +873,7 @@ input[type="radio"].error + span::before {
 .range-control {
 
   position: relative;
+  margin: 5px 0;
   width: 250px;
 
 }
