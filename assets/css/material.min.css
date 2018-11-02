@@ -126,6 +126,7 @@ nav h1 img {
   left: 0;
   background-color: #fff;
   overflow-x: hidden;
+  overflow-y: auto;
   padding-top: 85px;
   transition: 0.3s;
   -webkit-transition: 0.3s;
@@ -643,71 +644,136 @@ h1 {
 
 }
 
-input[type="checkbox"] {
+.checkbox-field input[type="checkbox"] {
 
-  display: none;
-
-}
-
-input[type="checkbox"] + label::before {
-
-  font-family: 'Material Icons';
-  font-size: 20px;
-  content: "\E835";
-  line-height: 16px;
-  display: inline-block;
-  vertical-align: sub;
-  margin-right: 5px;
-  color: #1a73e8;
+  width: 0;
+  height: 0;
+  outline: none;
+  margin: 0;
+  padding: 0;
 
 }
 
-input[type="checkbox"]:checked + label::before {
+.checkbox-field {
 
-  content: "\E834";
-  animation: check .14s ease-in;
-
-}
-
-input[type="checkbox"]:disabled + label::before {
-
-  color: #5f6368;
-  content: "\E835";
-  cursor: default;
-
-}
-
-input[type="checkbox"] + label {
-
-  font-weight: 200;
-  font-size: 16px;
-  color: #5f6368;
   cursor: pointer;
-  line-height: 16px;
+  color: #5f6368;
+  font-size: 16px;
 
 }
 
-input[type="checkbox"]:disabled + label {
+.checkbox {
 
-  cursor: default;
+  position: relative;
+  color: #5f6368;
+  display: inline-block;
+  vertical-align: middle;
+  transition: all .2s;
+  -webkit-transition: all .2s;
 
 }
 
-input[type="checkbox"].success + label::before {
+.checked-checkbox.checkbox {
+
+  color: #1a73e8;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+
+}
+
+.checkbox-field.success .checked-checkbox.checkbox {
 
   color: #64dd17;
 
 }
 
-input[type="checkbox"].warning + label::before {
+.checkbox-field.warning .checked-checkbox.checkbox {
 
   color: #ffab00;
 
 }
 
-input[type="checkbox"].error + label::before {
+.checkbox-field.error .checked-checkbox.checkbox {
 
   color: #dd2c00;
+
+}
+
+.checkbox::after {
+
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -50%;
+  margin-left: -50%;
+  width: 50px;
+  height: 50px;
+  background: rgba(26, 115, 232, .5);
+  opacity: 0;
+  border-radius: 100%;
+
+}
+
+.checkbox-field.success .checkbox::after {
+
+  background: rgba(100, 221, 23, .5);
+
+}
+
+.checkbox-field.warning .checkbox::after {
+
+  background: rgba(255, 171, 0, .5);
+
+}
+
+.checkbox-field.error .checkbox::after {
+
+  background: rgba(221, 44, 0, .5);
+
+}
+
+.checkbox-field input[type="checkbox"]:focus:not(:active) + .checkbox::after {
+
+  animation: ripple .3s ease-out;
+  -webikt-animation: ripple .3s ease-out;
+
+}
+
+.checkbox .checked-icon {
+
+  opacity: 0;
+  transform: scale(0.4);
+  transition: all .27s;
+  -webkit-transition: all .27s;
+
+}
+
+.checkbox .unchecked-icon {
+
+  position: absolute;
+  opacity: 1;
+  transform: scale(1);
+  transition: all .27s;
+  -webkit-transition: all .27s;
+
+}
+
+.checkbox.checked-checkbox .checked-icon {
+
+  opacity: 1;
+  transform: scale(1);
+  transition: all .27s;
+  -webkit-transition: all .27s;
+
+}
+
+.checkbox.checked-checkbox .unchecked-icon {
+
+  opacity: 0;
+  transform: scale(0.4);
+  transition: all .27s;
+  -webkit-transition: all .27s;
 
 }
 
@@ -992,7 +1058,7 @@ input[type="range"]::-moz-range-thumb {
   top: -32px;
   width: 33px;
   background-color: #1a73e8;
-  border-radius: 50% 50%;
+  border-radius: 50% 50% 50% 0;
   color: #fff;
   padding-top: calc((33px - 16px) / 2);
   padding-bottom: calc((33px - 16px) / 2);
@@ -1000,7 +1066,8 @@ input[type="range"]::-moz-range-thumb {
   line-height: 16px;
   text-align: center;
   opacity: 0;
-  transform: scale(0) translateX(-50%) translateY(50%);
+  transform: scale(0) translateX(-50%) translateY(50%) rotate(-45deg);
+  -webkit-transform: scale(0) translateX(-50%) translateY(50%) rotate(-45deg);
   transition: left .06s, opacity .3s, transform .3s;
   -webkit-transition: left .06s, opacity .3s, transform .3s;
 
@@ -1009,9 +1076,29 @@ input[type="range"]::-moz-range-thumb {
 input[type=range]:active + output {
 
   opacity: 1;
-  transform: scale(1) translateX(-50%) translateY(-10%);
+  transform: scale(1) translateX(-50%) translateY(-10%) rotate(-45deg);
+  -webkit-transform: scale(1) translateX(-50%) translateY(-10%) rotate(-45deg);
   transition: left .06s, opacity .3s, transform .3s;
   -webkit-transition: left .06s, opacity .3s, transform .3s;
+
+}
+
+.range-control output span {
+
+  display: block;
+  -webkit-transform: rotate(0) translateX(100%);
+  transform: rotate(0) translateX(100%);
+  transition: transform .3s;
+  -webkit-transition: transform .3s;
+
+}
+
+input[type=range]:active + output span {
+
+  -webkit-transform: rotate(45deg) translateX(0);
+  transform: rotate(45deg) translateX(0);
+  transition: transform .3s;
+  -webkit-transition: transform .3s;
 
 }
 
@@ -1073,6 +1160,31 @@ input[type=range]:active + output {
   100% {
 
     transform: scale(1);
+
+  }
+
+}
+
+@keyframes ripple {
+
+  0% {
+
+    transform: scale(0, 0);
+    opacity: 1;
+
+  }
+
+  20% {
+
+    transform: scale(.2, .2);
+    opacity: 1;
+
+  }
+
+  100% {
+
+    opacity: 0;
+    transform: scale(1, 1);
 
   }
 

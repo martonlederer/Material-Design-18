@@ -42,7 +42,7 @@
       <a href="buttons.html" class="waves-effect waves-light-blue"><i class="material-icons">dashboard</i><span>Buttons</span></a>
       <a href="text-inputs.html" class="waves-effect waves-light-blue"><i class="material-icons">text_format</i><span>Text inputs</span></a>
       <a href="other-inputs.html" class="waves-effect waves-light-blue"><i class="material-icons">adjust</i><span>Other inputs</span></a>
-      
+
     </div>
 
     <div id="main" class="main">
@@ -52,65 +52,75 @@
 
       <h1>Checkboxes</h1>
 
-      <div class="checkbox-field">
+      <label class="checkbox-field">
 
         <input type="checkbox" id="checkbox" />
-        <label for="checkbox">Normal checkbox</label>
+        <span class="checkbox"></span>
+        Checkbox
 
-      </div>
+      </label>
 
-      <textarea class="code" style="height: 70px" readonly><div class="checkbox-field">
-    <input type="checkbox" id="checkbox" />
-    <label for="checkbox">Normal checkbox</label>
-</div></textarea>
+      <textarea class="code" style="height: 70px" readonly><label class="checkbox-field">
+  <input type="checkbox" id="checkbox" />
+  <span class="checkbox"></span>
+  Checkbox
+</label></textarea>
 
-      <div class="checkbox-field">
+      <label class="checkbox-field">
 
-        <input type="checkbox" id="disabledCheckbox" disabled />
-        <label for="disabledCheckbox">Disabled checkbox</label>
+        <input type="checkbox" id="checkbox" disabled />
+        <span class="checkbox"></span>
+        Disabled checkbox
 
-      </div>
+      </label>
 
-      <textarea class="code" style="height: 70px" readonly><div class="checkbox-field">
-    <input type="checkbox" id="disabledCheckbox" disabled />
-    <label for="disabledCheckbox">Disabled checkbox</label>
-</div></textarea>
+      <textarea class="code" style="height: 70px" readonly><label class="checkbox-field">
+  <input type="checkbox" id="checkbox" disabled />
+  <span class="checkbox"></span>
+  Disabled checkbox
+</label></textarea>
 
-      <div class="checkbox-field">
+      <label class="checkbox-field success">
 
-        <input type="checkbox" class="success" id="successCheckbox" />
-        <label for="successCheckbox">Success checkbox</label>
+        <input type="checkbox" id="successCheckbox" />
+        <span class="checkbox"></span>
+        Success checkbox
 
-      </div>
+      </label>
 
-      <textarea class="code" style="height: 70px" readonly><div class="checkbox-field">
-    <input type="checkbox" class="success" id="successCheckbox" />
-    <label for="successCheckbox">Success checkbox</label>
-</div></textarea>
+      <textarea class="code" style="height: 70px" readonly><label class="checkbox-field success">
+  <input type="checkbox" id="successCheckbox" />
+  <span class="checkbox"></span>
+  Success checkbox
+</label></textarea>
 
-      <div class="checkbox-field">
+      <label class="checkbox-field warning">
 
-        <input type="checkbox" class="warning" id="warningCheckbox" />
-        <label for="warningCheckbox">Warning checkbox</label>
+        <input type="checkbox" id="warningCheckbox" />
+        <span class="checkbox"></span>
+        Warning checkbox
 
-      </div>
+      </label>
 
-      <textarea class="code" style="height: 70px" readonly><div class="checkbox-field">
-    <input type="checkbox" class="warning" id="warningCheckbox" />
-    <label for="warningCheckbox">Warning checkbox</label>
-</div></textarea>
+      <textarea class="code" style="height: 70px" readonly><label class="checkbox-field warning">
+  <input type="checkbox" id="warningCheckbox" />
+  <span class="checkbox"></span>
+  Warning checkbox
+</label></textarea>
 
-      <div class="checkbox-field">
+      <label class="checkbox-field error">
 
-        <input type="checkbox" class="error" id="errorCheckbox" />
-        <label for="errorCheckbox">Error checkbox</label>
+        <input type="checkbox" id="errorCheckbox" />
+        <span class="checkbox"></span>
+        Error checkbox
 
-      </div>
+      </label>
 
-      <textarea class="code" style="height: 70px" readonly><div class="checkbox-field">
-    <input type="checkbox" class="error" id="errorCheckbox" />
-    <label for="errorCheckbox">Error checkbox</label>
-</div></textarea>
+      <textarea class="code" style="height: 70px" readonly><label class="checkbox-field error">
+  <input type="checkbox" id="errorCheckbox" />
+  <span class="checkbox"></span>
+  Error checkbox
+</label></textarea>
 
       <h1>Dropdowns</h1>
 
@@ -243,61 +253,61 @@
       <div class="range-control">
 
         <input type="range" min="0" max="100" step="1" value="0" data-thumbwidth="20">
-        <output name="rangeVal">0</output>
+        <output name="rangeVal"><span>0</span></output>
 
       </div>
 
       <textarea class="code" style="height: 70px" readonly><div class="range-control">
   <input type="range" min="0" max="100" step="1" value="0" data-thumbwidth="20">
-  <output name="rangeVal">0</output>
+  <output name="rangeVal"><span>0</span></output>
 </div></textarea>
 
       <div class="range-control">
 
         <input type="range" min="0" max="100" step="1" value="0" data-thumbwidth="20" disabled>
-        <output name="rangeVal">0</output>
+        <output name="rangeVal"><span>0</span></output>
 
       </div>
 
       <textarea class="code" style="height: 70px" readonly><div class="range-control">
   <input type="range" min="0" max="100" step="1" value="0" data-thumbwidth="20" disabled>
-  <output name="rangeVal">0</output>
+  <output name="rangeVal"><span>0</span></output>
 </div></textarea>
 
       <div class="range-control success">
 
         <input type="range" min="0" max="100" step="1" value="0" data-thumbwidth="20">
-        <output name="rangeVal">0</output>
+        <output name="rangeVal"><span>0</span></output>
 
       </div>
 
       <textarea class="code" style="height: 70px" readonly><div class="range-control success">
   <input type="range" min="0" max="100" step="1" value="0" data-thumbwidth="20">
-  <output name="rangeVal">0</output>
+  <output name="rangeVal"><span>0</span></output>
 </div></textarea>
 
       <div class="range-control warning">
 
         <input type="range" min="0" max="100" step="1" value="0" data-thumbwidth="20">
-        <output name="rangeVal">0</output>
+        <output name="rangeVal"><span>0</span></output>
 
       </div>
 
       <textarea class="code" style="height: 70px" readonly><div class="range-control warning">
   <input type="range" min="0" max="100" step="1" value="0" data-thumbwidth="20">
-  <output name="rangeVal">0</output>
+  <output name="rangeVal"><span>0</span></output>
 </div></textarea>
 
       <div class="range-control error">
 
         <input type="range" min="0" max="100" step="1" value="0" data-thumbwidth="20">
-        <output name="rangeVal">0</output>
+        <output name="rangeVal"><span>0</span></output>
 
       </div>
 
       <textarea class="code" style="height: 70px" readonly><div class="range-control error">
   <input type="range" min="0" max="100" step="1" value="0" data-thumbwidth="20">
-  <output name="rangeVal">0</output>
+  <output name="rangeVal"><span>0</span></output>
 </div></textarea>
 
     </div>
