@@ -519,7 +519,7 @@ textarea {
   position: relative;
   margin: 0;
   display: block;
-  color: #757575;
+  color: rgb(163, 163, 163);
   line-height: 16px;
   font-size: 16px;
   font-weight: 400;
@@ -638,7 +638,7 @@ h1 {
 
   font-size: 13px;
   font-weight: normal;
-  color: #5f6368;
+  color: rgb(163, 163, 163);
   margin: 0 auto auto auto;
   transition: color .2;
 
