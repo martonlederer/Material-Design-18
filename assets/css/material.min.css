@@ -1119,6 +1119,126 @@ input[type="file"] {
 
 }
 
+.modal {
+
+  padding-top: 40px;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .6);
+  animation: darker .2s ease-out;
+  -webkit-animation: darker .2s ease-out;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  display: none;
+
+}
+
+.modal-container {
+
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  color: #5f6368;
+  font-size: 18px;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  width: 450px;
+  background-color: #fff;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 1.2rem 1.5rem 0px rgba(0,0,0,0.24);
+  box-shadow: 0px 1.2rem 1.5rem 0px rgba(0,0,0,0.24);
+  transform: scale(0);
+  transition: all .15s ease-in-out;
+  -webkit-transition: all .15s ease-in-out;
+
+}
+
+.modal-header {
+
+  width: 100%;
+
+}
+
+.modal-header h1 {
+
+  color: #5f6368;
+  font-size: 25px;
+  display: inline-block;
+  margin: 20px 0 20px 20px;
+  line-height: 25px;
+
+}
+
+.modal-header .close {
+
+  color: #5f6368;
+  font-size: 25px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  float: right;
+  margin: 20px 20px 20px 0;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 25px;
+  border-radius: 100%;
+
+}
+
+.close i {
+
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.modal-content {
+
+  padding: 0 20px 20px 20px;
+
+}
+
+.modal.primary .modal-container .modal-content, .modal.success .modal-container .modal-content, .modal.warning .modal-container .modal-content, .modal.error .modal-container .modal-content {
+
+  padding: 20px;
+
+}
+
+.modal.primary .modal-container .modal-header h1, .modal.success .modal-container .modal-header h1, .modal.warning .modal-container .modal-header h1, .modal.error .modal-container .modal-header h1, .modal.primary .modal-container .modal-header .close, .modal.success .modal-container .modal-header .close, .modal.warning .modal-container .modal-header .close, .modal.error .modal-container .modal-header .close {
+
+  color: #fff;
+
+}
+
+.modal.primary .modal-container .modal-header {
+
+  background-color: #1a73e8;
+
+}
+
+.modal.success .modal-container .modal-header {
+
+  background-color: #64dd17;
+
+}
+
+.modal.warning .modal-container .modal-header {
+
+  background-color: #ffab00;
+
+}
+
+.modal.error .modal-container .modal-header {
+
+  background-color: #dd2c00;
+
+}
+
 @media screen and (max-width: 790px) {
 
   .code {
@@ -1149,6 +1269,12 @@ input[type="file"] {
   .qna {
 
     padding: 10px 5% 10px 5%;
+
+  }
+
+  .modal-container {
+
+    width: 80%;
 
   }
 
@@ -1196,6 +1322,22 @@ input[type="file"] {
 
     opacity: 0;
     transform: scale(1, 1);
+
+  }
+
+}
+
+@keyframes darker {
+
+  from {
+
+    background-color: rgba(0, 0, 0, 0);
+
+  }
+
+  to {
+
+    background-color: rgba(0, 0, 0, .6);
 
   }
 

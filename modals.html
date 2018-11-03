@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+
+  <head>
+
+    <title>Material Design</title>
+
+    <link rel="shortcut icon" type="image/png" href="assets/img/icon.png"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1a73e8">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="description" content="Material '18 - Buttons">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/material.min.css" />
+    <link rel="stylesheet" href="assets/css/waves.min.css" />
+
+    <script src="assets/js/waves.min.js"></script>
+    <script src="assets/js/material.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <nav>
+
+      <a id="menuTrigger" class="waves-effect waves-light menu-trigger"><i class="material-icons menu">menu</i><i class="material-icons close">close</i></a>
+
+      <h1><img src="assets/img/icon.png" /> Material '18</h1>
+
+    </nav>
+
+    <div id="sidenav" class="sidenav">
+
+      <a href="index.html" class="waves-effect waves-light-blue"><i class="material-icons">home</i><span>Home</span></a>
+      <a href="setup.html" class="waves-effect waves-light-blue"><i class="material-icons">build</i><span>Setup the library</span></a>
+      <a href="buttons.html" class="waves-effect waves-light-blue"><i class="material-icons">dashboard</i><span>Buttons</span></a>
+      <a href="text-inputs.html" class="waves-effect waves-light-blue"><i class="material-icons">text_format</i><span>Text inputs</span></a>
+      <a href="other-inputs.html" class="waves-effect waves-light-blue"><i class="material-icons">adjust</i><span>Other inputs</span></a>
+      <a href="modals.html" class="waves-effect waves-light-blue"><i class="material-icons">computer</i><span>Modals</span></a>
+
+    </div>
+
+    <div id="main" class="main">
+
+      <h1 class="title">Modals</h1>
+      <p class="subtitle">Modals are very useful, when it comes to user notifications or quick input handling. This library includes many different modals, listed belove.</p>
+
+      <button class="waves-effect waves-light-blue button shadowed modal-toggle" modal-toggle="modalID">Default modal</button>
+
+      <p class="subtitle">Add the class "modal-toggle" to the element you want to trigger the modal and fill the "modal-toggle" attribute with the id of the modal, you want to open. The modal div has to be outside of every other dividers.</p>
+
+      <textarea class="code" style="height: 230px" readonly><button class="waves-effect waves-light-blue button shadowed modal-toggle" modal-toggle="modalID">Default modal</button>
+<div class="modal" id="modalID">
+  <div class="modal-container">
+    <div class="modal-header">
+      <h1>Modal title</h1>
+      <a class="close waves-effect waves-light-blue"><i class="material-icons">close</i></a>
+    </div>
+    <div class="modal-content">
+      Modal content
+    </div>
+  </div>
+</div></textarea>
+
+      <button class="waves-effect waves-light-blue button shadowed modal-toggle" modal-toggle="primaryModalID">Primary modal</button>
+
+      <textarea class="code" style="height: 230px" readonly><button class="waves-effect waves-light-blue button shadowed modal-toggle" modal-toggle="primaryModalID">Primary modal</button>
+<div class="modal primary" id="primaryModalID">
+  <div class="modal-container">
+    <div class="modal-header">
+      <h1>Primary modal title</h1>
+      <a class="close waves-effect waves-light"><i class="material-icons">close</i></a>
+    </div>
+    <div class="modal-content">
+      Modal content
+    </div>
+  </div>
+</div></textarea>
+
+      <button class="waves-effect waves-light-blue button shadowed modal-toggle" modal-toggle="successModalID">Success modal</button>
+
+      <textarea class="code" style="height: 230px" readonly><button class="waves-effect waves-light-blue button shadowed modal-toggle" modal-toggle="successModalID">Success modal</button>
+ <div class="modal success" id="successModalID">
+   <div class="modal-container">
+     <div class="modal-header">
+       <h1>Success modal title</h1>
+       <a class="close waves-effect waves-light"><i class="material-icons">close</i></a>
+     </div>
+     <div class="modal-content">
+       Modal content
+     </div>
+   </div>
+ </div></textarea>
+
+      <button class="waves-effect waves-light-blue button shadowed modal-toggle" modal-toggle="warningModalID">Warning modal</button>
+
+      <textarea class="code" style="height: 230px" readonly><button class="waves-effect waves-light-blue button shadowed modal-toggle" modal-toggle="warningModalID">Warning modal</button>
+ <div class="modal warning" id="warningModalID">
+   <div class="modal-container">
+     <div class="modal-header">
+       <h1>Warning modal title</h1>
+       <a class="close waves-effect waves-light"><i class="material-icons">close</i></a>
+     </div>
+     <div class="modal-content">
+       Modal content
+     </div>
+   </div>
+ </div></textarea>
+
+      <button class="waves-effect waves-light-blue button shadowed modal-toggle" modal-toggle="errorModalID">Error modal</button>
+
+      <textarea class="code" style="height: 230px" readonly><button class="waves-effect waves-light-blue button shadowed modal-toggle" modal-toggle="errorModalID">Error modal</button>
+ <div class="modal error" id="errorModalID">
+   <div class="modal-container">
+     <div class="modal-header">
+       <h1>Error modal title</h1>
+       <a class="close waves-effect waves-light"><i class="material-icons">close</i></a>
+     </div>
+     <div class="modal-content">
+       Modal content
+     </div>
+   </div>
+ </div></textarea>
+
+      <h1 class="title">Javascript</h1>
+      <p>You can toggle the modal using JavaScript</p>
+
+      <textarea class="code" readonly>toggleModal("modalID");</textarea>
+
+      <p>You can also toggle if the modal is closeable. By default, its true.</p>
+
+      <textarea class="code" readonly>toggleCloseable("modalID", true);</textarea>
+
+    </div>
+
+    <div class="modal" id="modalID">
+
+      <div class="modal-container">
+
+        <div class="modal-header">
+
+          <h1>Modal title</h1>
+          <a class="close waves-effect waves-light-blue"><i class="material-icons">close</i></a>
+
+        </div>
+
+        <div class="modal-content">
+
+          Modal content
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="modal primary" id="primaryModalID">
+
+      <div class="modal-container">
+
+        <div class="modal-header">
+
+          <h1>Primary modal title</h1>
+          <a class="close waves-effect waves-light"><i class="material-icons">close</i></a>
+
+        </div>
+
+        <div class="modal-content">
+
+          Modal content
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="modal success" id="successModalID">
+
+      <div class="modal-container">
+
+        <div class="modal-header">
+
+          <h1>Success modal title</h1>
+          <a class="close waves-effect waves-light"><i class="material-icons">close</i></a>
+
+        </div>
+
+        <div class="modal-content">
+
+          Modal content
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="modal warning" id="warningModalID">
+
+      <div class="modal-container">
+
+        <div class="modal-header">
+
+          <h1>Warning modal title</h1>
+          <a class="close waves-effect waves-light"><i class="material-icons">close</i></a>
+
+        </div>
+
+        <div class="modal-content">
+
+          Modal content
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="modal error" id="errorModalID">
+
+      <div class="modal-container">
+
+        <div class="modal-header">
+
+          <h1>Error modal title</h1>
+          <a class="close waves-effect waves-light"><i class="material-icons">close</i></a>
+
+        </div>
+
+        <div class="modal-content">
+
+          Modal content
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer>
+
+      <h1 class="title">Material '18</h1>
+      <h1>A library for the Material Design 2018 edition</h1>
+      <iframe src="https://ghbtns.com/github-btn.html?user=MartonDev&repo=Material-Design-18&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+      <h1 class="author">Made with ♥ by Marton</h1>
+
+    </footer>
+
+  </body>
+
+</html>
