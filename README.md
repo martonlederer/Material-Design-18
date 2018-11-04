@@ -1,2 +1,16 @@
-# Material '18
-An HTML-CSS-JS library for Material Design 2018
+<p align="center">
+
+  <a href="https://martondev.github.io/Material-Design-18">
+
+    <img src="https://martondev.github.io/Material-Design-18/assets/img/icon.png" width="150" height="150">
+
+  </a>
+
+</p>
+
+<h1 align="center">Material '18</h1>
+
+# Quickstart
+[Start](https://martondev.github.io/Material-Design-18/)
+[Setup](https://martondev.github.io/Material-Design-18/setup)
+[Copyright & License](https://github.com/MartonDev/Material-Design-18/blob/master/LICENSE)
