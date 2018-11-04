@@ -1174,6 +1174,7 @@ input[type="file"] {
 
 .modal-header .close {
 
+  position: relative;
   color: #5f6368;
   font-size: 25px;
   width: 25px;
@@ -1192,8 +1193,10 @@ input[type="file"] {
 
 .close i {
 
-  text-align: center;
-  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 }
 
@@ -1236,6 +1239,66 @@ input[type="file"] {
 .modal.error .modal-container .modal-header {
 
   background-color: #dd2c00;
+
+}
+
+nav.collapsing {
+
+  padding: 0;
+  background-color: #fff;
+  width: 90%;
+  border-radius: 8px;
+  margin: 10px 5% 10px 5%;
+  box-shadow: 0 1px 1px 0 rgba(163, 163, 163, 0.43), 0 1px 3px 1px rgba(163, 163, 163, 0.37);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(163, 163, 163, 0.43), 0 1px 3px 1px rgba(163, 163, 163, 0.37);
+  transition: all .17s ease-in-out;
+  -webkit-transition: all .17s ease-in-out;
+
+}
+
+nav.collapsing a {
+
+  color: #5f6368;
+  margin-left: 11px;
+
+}
+
+nav.collapsing .search {
+
+  right: 0;
+  margin: 0;
+  margin-right: 11px;
+  font-size: 25px;
+  text-decoration: none;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 50% 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+nav.collapsing .search i {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+nav.collapsing h1 {
+
+  display: inline-block;
+  margin: 0;
+  color: #5f6368;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 }
 
