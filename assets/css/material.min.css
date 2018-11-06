@@ -3,13 +3,12 @@
   Licensed under the MIT license
  */
 
-@import "fonts/ProductSans.css";
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 body {
 
   margin: 0;
-  font-family: 'ProductSans', arial, sans-serif;
+  font-family: "Google Sans","Roboto",Arial,Helvetica,sans-serif;
   font-weight: normal;
   background-color: #eee;
   overflow-x: hidden;
@@ -46,6 +45,12 @@ body {
 
   background: rgba(0, 0, 0, 0.5);
   border-radius: 6px;
+
+}
+
+p {
+
+  font-weight: 500;
 
 }
 
@@ -659,6 +664,7 @@ h1 {
   cursor: pointer;
   color: #5f6368;
   font-size: 16px;
+  font-weight: 500;
 
 }
 
@@ -1053,7 +1059,6 @@ input[type="range"]::-moz-range-thumb {
 
 .range-control output {
 
-  font-family: 'Roboto', sans-serif;
   position: absolute;
   top: -32px;
   width: 33px;
