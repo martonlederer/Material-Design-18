@@ -602,6 +602,37 @@ textarea {
 
 }
 
+.input-field.boxed::after {
+
+  bottom: 2px;
+
+}
+
+.input-field.boxed::after, .input-field.boxed::before {
+
+  width: 96%;
+  margin-left: 2%;
+
+}
+
+.input-field.boxed input {
+
+  background-color: #fff;
+  caret-color: #1a73e8;
+  border-radius: 8px;
+  padding-left: 2px;
+  padding-bottom: 5px;
+
+}
+
+.input-field.boxed label {
+
+  -webkit-transform: translateY(0) scale(0.75);
+  -ms-transform: translateY(0) scale(0.75);
+  transform: translateY(0) scale(0.75);
+
+}
+
 .shadowed-input {
 
   outline: none;
@@ -613,12 +644,13 @@ textarea {
   margin: 7px 2px;
   min-width: 250px;
   color: #5f6368;
+  caret-color: #1a73e8;
   font-family: 'ProductSans', arial, sans-serif;
   font-weight: normal;
   box-shadow: 0 1px 1px 0 rgba(163, 163, 163, 0.33), 0 1px 3px 1px rgba(163, 163, 163, 0.27);
   -webkit-box-shadow: 0 1px 1px 0 rgba(163, 163, 163, 0.33), 0 1px 3px 1px rgba(163, 163, 163, 0.27);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: box-shadow 0.3s, webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s, webkit-box-shadow 0.3s;
 
 }
 
