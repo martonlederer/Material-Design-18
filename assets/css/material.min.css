@@ -106,7 +106,7 @@ nav .menu-trigger .close {
 nav h1 {
 
   color: #1A73E7;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
   display: inline-block;
   margin: 0 0 0 40px;
@@ -121,7 +121,7 @@ nav h1 img {
   width: 17px;
   height: 17px;
   top: 100%;
-  transform: translateY(15%);
+  transform: translateY(5%);
 
 }
 
@@ -618,37 +618,6 @@ textarea {
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1);
-
-}
-
-.input-field.boxed::after {
-
-  bottom: 2px;
-
-}
-
-.input-field.boxed::after, .input-field.boxed::before {
-
-  width: 96%;
-  margin-left: 2%;
-
-}
-
-.input-field.boxed input {
-
-  background-color: #fff;
-  caret-color: #1A73E7;
-  border-radius: 8px;
-  padding-left: 2px;
-  padding-bottom: 5px;
-
-}
-
-.input-field.boxed label {
-
-  -webkit-transform: translateY(0) scale(0.75);
-  -ms-transform: translateY(0) scale(0.75);
-  transform: translateY(0) scale(0.75);
 
 }
 
