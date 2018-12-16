@@ -1330,8 +1330,9 @@ nav.collapsing h1 {
 .toast {
 
   position: fixed;
-  right: 0;
   bottom: 0;
+  right: 0;
+  opacity: 0;
   background-color: #323232;
   border-radius: 3px;
   margin: 45px;
@@ -1351,6 +1352,51 @@ nav.collapsing h1 {
   font-weight: 200;
   margin: 0;
   margin-bottom: 4px;
+
+}
+
+.toast h1 .okay {
+
+  text-transform: uppercase;
+  color: #1A73E7;
+  font-size: 18px;
+  font-weight: 200;
+  border-radius: 3px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+
+}
+
+.toast h1 .dismiss {
+
+  color: #1A73E7;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  border-radius: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+
+}
+
+.toast h1 .dismiss i {
+
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 }
 

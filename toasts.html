@@ -53,9 +53,26 @@
       <h1 class="title">Toasts</h1>
       <p class="subtitle">Toasts are basically notifications. They show information or feedback for the user.</p>
 
-      <button class="waves-effect waves-light-blue button shadowed" onclick="showToast();">Simple toast</button>
+      <button class="waves-effect waves-light-blue button shadowed" onclick="showToast('Toast html content...', 3000);">Simple toast</button>
 
-      <textarea class="code" readonly></textarea>
+      <textarea class="code" readonly>showToast('Toast html content...', 3000);</textarea>
+
+      <button class="waves-effect waves-light-blue button shadowed" onclick="showToast('Toast with okay button <button class=&quot;okay waves-effect waves-light&quot; onclick=&quot;dismissToast($(this).parent().parent());&quot;>Ok</button>', 30000);">Toast with OK button</button>
+
+      <textarea class="code" readonly>showToast('Toast with okay button <button class="okay waves-effect waves-light" onclick="dismissToast($(this).parent().parent());">Ok</button>');</textarea>
+
+      <button class="waves-effect waves-light-blue button shadowed" onclick="showToast('Toast with dismiss button <button class=&quot;dismiss waves-effect waves-light&quot; onclick=&quot;dismissToast($(this).parent().parent());&quot;><i class=&quot;material-icons close&quot;>close</i></button>', 30000);">Toast with dismiss button</button>
+
+      <textarea class="code" readonly>showToast('Toast with dismiss button <button class="dismiss waves-effect waves-light" onclick="dismissToast($(this).parent().parent());"><i class=&quot;material-icons close&quot;>close</i></button>', 30000);</textarea>
+
+      <h1 class="title">Javascript</h1>
+      <p>You can send a toast to the user</p>
+
+      <textarea class="code" readonly>showToast('Toast html content...', 3000);</textarea>
+
+      <p>You can also dismiss a toast</p>
+
+      <textarea class="code" readonly>dismissToast(toastSelector);</textarea>
 
     </div>
 
