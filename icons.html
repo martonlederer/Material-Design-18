@@ -101,9 +101,100 @@
 
         for(i = 0; i < lines.length; i++) {
 
-          if(lines[i].split(" ")[0] != "") {
+          var icon = lines[i].split(" ")[0];
 
-            $("#icons-presentation").append('<div class="icon-presentation"><i class="material-icons">' + lines[i].split(" ")[0] + '</i>' + lines[i].split(" ")[0] + '</div>');
+          if(icon != "") {
+
+            $("#icons-presentation").append('<div id="pres-' + icon + '" class="icon-presentation waves-effect waves-blue"><i class="material-icons">' + icon + '</i>' + icon + '</div>');
+            $("body").append('<div class="modal" id="icon-' + icon + '"><div class="modal-container"><div class="modal-header"><h1>' + icon + '</h1><a class="close waves-effect waves-light-blue"><i class="material-icons">close</i></a></div><div class="modal-content"><div style="display:inline-block;vertical-align:top;margin-right:10px;"><i class="large material-icons example-icon">' + icon + '</i></div><div style="display:inline-block;vertical-align:top;"><textarea class="code" style="width:250px;" readonly><i class="large material-icons">' + icon + '</i></textarea><h1>Color</h1><label><input type="radio" name="group1" class="grey-radio" /><span>Normal</span></label><br /><label><input name="group1" type="radio" checked /><span>Primary</span></label><br /><label><input name="group1" type="radio" class="success" /><span>Success</span></label><br /><label><input name="group1" type="radio" class="warning" /><span>Warning</span></label><br /><label><input name="group1" type="radio" class="error" /><span>Error</span></label><h1>Size</h1><label><input name="group2" type="radio" checked /><span>Tiny</span></label><br /><label><input name="group2" type="radio" /><span>Small</span></label><br /><label><input name="group2" type="radio" /><span>Medium</span></label><br /><label><input name="group2" type="radio" /><span>Large</span></label></div></div></div></div>');
+
+            $("#pres-" + icon).click(function() {
+
+              toggleModal('icon-' + $(this).attr("id").split("pres-")[1]);
+
+            });
+
+            $("#icon-" + icon + " input[type=radio]").click(function() {
+
+              if($(this).attr("name") == "group1") {
+
+                switch ($(this).parent().find("span").html()) {
+
+                  case "Normal":
+
+                    $(".example-icon").removeClass("primary success warning error");
+
+                    break;
+
+                  case "Primary":
+
+                    $(".example-icon").removeClass("primary success warning error");
+                    $(".example-icon").addClass("primary");
+
+                    break;
+
+                  case "Success":
+
+                    $(".example-icon").removeClass("primary success warning error");
+                    $(".example-icon").addClass("success");
+
+                    break;
+
+                  case "Warning":
+
+                    $(".example-icon").removeClass("primary success warning error");
+                    $(".example-icon").addClass("warning");
+
+                    break;
+
+                  case "Error":
+
+                    $(".example-icon").removeClass("primary success warning error");
+                    $(".example-icon").addClass("error");
+
+                    break;
+
+                }
+
+              }else if($(this).attr("name") == "group2") {
+
+                switch ($(this).parent().find("span").html()) {
+
+                  case "Tiny":
+
+                    $(".example-icon").removeClass("tiny small medium large");
+                    $(".example-icon").addClass("tiny");
+
+                    break;
+
+                  case "Small":
+
+                    $(".example-icon").removeClass("tiny small medium large");
+                    $(".example-icon").addClass("small");
+
+                    break;
+
+                  case "Medium":
+
+                    $(".example-icon").removeClass("tiny small medium large");
+                    $(".example-icon").addClass("medium");
+
+                    break;
+
+                  case "Large":
+
+                    $(".example-icon").removeClass("tiny small medium large");
+                    $(".example-icon").addClass("large");
+
+                    break;
+
+                }
+
+              }
+
+              $(this).parent().parent().parent().find("textarea.code").val($(this).parent().parent().parent().find(".example-icon").parent().html());
+
+            });
 
           }
 

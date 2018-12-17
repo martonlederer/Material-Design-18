@@ -963,6 +963,18 @@ input[type="radio"].error + span::before {
 
 }
 
+input[type="radio"].grey-radio {
+
+  color: #5f6368 !important;
+
+}
+
+input[type="radio"].grey-radio + span::before {
+
+  color: #5f6368 !important;
+
+}
+
 .range-control {
 
   position: relative;
@@ -1437,6 +1449,38 @@ nav.collapsing h1 {
   color: #5f6368;
   font-size: 35px;
   display: block;
+
+}
+
+.material-icons {
+
+  color: #5f6368;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+
+}
+
+.material-icons.primary {
+
+  color: #1A73E7;
+
+}
+
+.material-icons.success {
+
+  color: #64dd17;
+
+}
+
+.material-icons.warning {
+
+  color: #ffab00;
+
+}
+
+.material-icons.error {
+
+  color: #dd2c00;
 
 }
 
