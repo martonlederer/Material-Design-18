@@ -1508,6 +1508,70 @@ nav.collapsing h1 {
 
 }
 
+.linear-loader {
+
+  background-color: rgba(26, 115, 231, 0.3);
+  border-radius: 3px;
+  width: 300px;
+  height: 4px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+
+}
+
+.linear-loader .determinate, .linear-loader .indeterminate {
+
+  background-color: #1A73E7;
+  height: 100%;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+
+}
+
+.linear-loader .indeterminate {
+
+  animation: indeterminate 2s infinite;
+  -webikt-animation: indeterminate 2s infinite;
+
+}
+
+.linear-loader.success {
+
+  background-color: rgba(100, 221, 23, 0.3);
+
+}
+
+.linear-loader.success .determinate, .linear-loader.success .indeterminate {
+
+  background-color: #64dd17;
+
+}
+
+.linear-loader.warning {
+
+  background-color: rgba(255, 171, 0, 0.3);
+
+}
+
+.linear-loader.warning .determinate, .linear-loader.warning .indeterminate {
+
+  background-color: #ffab00;
+
+}
+
+.linear-loader.error {
+
+  background-color: rgba(221, 44, 0, 0.3);
+
+}
+
+.linear-loader.error .determinate, .linear-loader.error .indeterminate {
+
+  background-color: #dd2c00;
+
+}
+
 @media screen and (max-width: 790px) {
 
   .code {
@@ -1607,6 +1671,31 @@ nav.collapsing h1 {
   to {
 
     background-color: rgba(0, 0, 0, .6);
+
+  }
+
+}
+
+@keyframes indeterminate {
+
+  0% {
+
+    width: 0%;
+    margin-left: -20%;
+
+  }
+
+  50% {
+
+    width: 40%;
+    margin-left: 30%;
+
+  }
+
+  100% {
+
+    width: 0%;
+    margin-left: 120%;
 
   }
 

@@ -52,29 +52,94 @@
 
     <div id="main" class="main">
 
-      <h1 class="title">Toasts</h1>
-      <p class="subtitle">Toasts are basically notifications. They show information or feedback for the user.</p>
+      <h1 class="title">Loaders</h1>
+      <p class="subtitle">Loaders are used to let the user know, that the content of the site is processing and it will be loaded soon.</p>
 
-      <button class="waves-effect waves-light-blue button shadowed" onclick="showToast('Toast html content...', 3000);">Simple toast</button>
+      <h1>Linear loaders</h1>
 
-      <textarea class="code" readonly>showToast('Toast html content...', 3000);</textarea>
+      <p>Determinate</p>
 
-      <button class="waves-effect waves-light-blue button shadowed" onclick="showToast('Toast with okay button <button class=&quot;okay waves-effect waves-light&quot; onclick=&quot;dismissToast($(this).parent().parent());&quot;>Ok</button>', 30000);">Toast with OK button</button>
+      <div class="linear-loader">
 
-      <textarea class="code" readonly>showToast('Toast with okay button <button class="okay waves-effect waves-light" onclick="dismissToast($(this).parent().parent());">Ok</button>');</textarea>
+        <div class="determinate" percentage="75"></div>
 
-      <button class="waves-effect waves-light-blue button shadowed" onclick="showToast('Toast with dismiss button <button class=&quot;dismiss waves-effect waves-light&quot; onclick=&quot;dismissToast($(this).parent().parent());&quot;><i class=&quot;material-icons close&quot;>close</i></button>', 30000);">Toast with dismiss button</button>
+      </div>
 
-      <textarea class="code" readonly>showToast('Toast with dismiss button <button class="dismiss waves-effect waves-light" onclick="dismissToast($(this).parent().parent());"><i class=&quot;material-icons close&quot;>close</i></button>', 30000);</textarea>
+      <textarea class="code" readonly><div class="linear-loader">
+  <div class="determinate" percentage="75"></div>
+</div></textarea>
 
-      <h1 class="title">Javascript</h1>
-      <p>You can send a toast to the user</p>
+      <div class="linear-loader success">
 
-      <textarea class="code" readonly>showToast('Toast html content...', 3000);</textarea>
+        <div class="determinate" percentage="25"></div>
 
-      <p>You can also dismiss a toast</p>
+      </div>
 
-      <textarea class="code" readonly>dismissToast(toastSelector);</textarea>
+      <textarea class="code" readonly><div class="linear-loader success">
+  <div class="determinate" percentage="25"></div>
+</div></textarea>
+
+      <div class="linear-loader warning">
+
+        <div class="determinate" percentage="75"></div>
+
+      </div>
+
+      <textarea class="code" readonly><div class="linear-loader warning">
+  <div class="determinate" percentage="75"></div>
+</div></textarea>
+
+      <div class="linear-loader error">
+
+        <div class="determinate" percentage="50"></div>
+
+      </div>
+
+      <textarea class="code" readonly><div class="linear-loader error">
+  <div class="determinate" percentage="50"></div>
+</div></textarea>
+
+      <p>Indeterminate</p>
+
+      <div class="linear-loader">
+
+        <div class="indeterminate"></div>
+
+      </div>
+
+      <textarea class="code" readonly><div class="linear-loader">
+  <div class="indeterminate"></div>
+</div></textarea>
+
+      <div class="linear-loader success">
+
+        <div class="indeterminate"></div>
+
+      </div>
+
+      <textarea class="code" readonly><div class="linear-loader success">
+  <div class="indeterminate"></div>
+</div></textarea>
+
+      <div class="linear-loader warning">
+
+        <div class="indeterminate"></div>
+
+      </div>
+
+      <textarea class="code" readonly><div class="linear-loader warning">
+  <div class="indeterminate"></div>
+</div></textarea>
+
+      <div class="linear-loader error">
+
+        <div class="indeterminate"></div>
+
+      </div>
+
+      <textarea class="code" readonly><div class="linear-loader error">
+  <div class="indeterminate"></div>
+</div></textarea>
 
     </div>
 
