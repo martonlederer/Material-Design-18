@@ -79,7 +79,23 @@
 
       <div id="icons-presentation">
 
+        <div class="circular-loader">
 
+          <div class="loaderbox">
+
+            <div class="loader">
+
+              <svg class="circular" viewBox="25 25 50 50">
+
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+
+              </svg>
+
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
 
@@ -97,6 +113,8 @@
     <script>
 
       $.get("https://raw.githubusercontent.com/google/material-design-icons/master/iconfont/codepoints", function(data) {
+
+        $("#icons-presentation").html("");
 
         var lines = data.split("\n");
 
