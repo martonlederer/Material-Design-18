@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#1a73e8">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="description" content="Material '18 - Toasts">
+    <meta name="description" content="Material '18 - Cards">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -50,29 +50,26 @@
 
     <div id="main" class="main">
 
-      <h1 class="title">Toasts</h1>
-      <p class="subtitle">Toasts are basically notifications. They show information or feedback for the user.</p>
+      <h1 class="title">Cards</h1>
+      <p class="subtitle">Cards are used to contain items or highlight a specific part of the user interface.</p>
 
-      <button class="waves-effect waves-light-blue button shadowed" onclick="showToast('Toast html content...', 3000);">Simple toast</button>
+      <div class="card">
 
-      <textarea class="code" readonly>showToast('Toast html content...', 3000);</textarea>
+        <p>Some text in the card</p>
+        <button class="waves-effect waves-light-blue button shadowed">Card content here</button>
 
-      <button class="waves-effect waves-light-blue button shadowed" onclick="showToast('Toast with okay button <button class=&quot;okay waves-effect waves-light&quot; onclick=&quot;dismissToast($(this).parent().parent());&quot;>Ok</button>', 30000);">Toast with OK button</button>
+      </div>
 
-      <textarea class="code" readonly>showToast('Toast with okay button <button class="okay waves-effect waves-light" onclick="dismissToast($(this).parent().parent());">Ok</button>');</textarea>
+      <textarea class="code" readonly><div class="card"></div></textarea>
 
-      <button class="waves-effect waves-light-blue button shadowed" onclick="showToast('Toast with dismiss button <button class=&quot;dismiss waves-effect waves-light&quot; onclick=&quot;dismissToast($(this).parent().parent());&quot;><i class=&quot;material-icons close&quot;>close</i></button>', 30000);">Toast with dismiss button</button>
+      <div class="card flat">
 
-      <textarea class="code" readonly>showToast('Toast with dismiss button <button class="dismiss waves-effect waves-light" onclick="dismissToast($(this).parent().parent());"><i class=&quot;material-icons close&quot;>close</i></button>', 30000);</textarea>
+        <p>Some text in the flat card</p>
+        <button class="waves-effect waves-light-blue button primary">Card content here</button>
 
-      <h1 class="title">Javascript</h1>
-      <p>You can send a toast to the user</p>
+      </div>
 
-      <textarea class="code" readonly>showToast('Toast html content...', 3000);</textarea>
-
-      <p>You can also dismiss a toast</p>
-
-      <textarea class="code" readonly>dismissToast(toastSelector);</textarea>
+      <textarea class="code" readonly><div class="card flat"></div></textarea>
 
       <footer>
 

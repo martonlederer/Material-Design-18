@@ -216,7 +216,7 @@ footer {
   margin-left: -30px;
   margin-right: -30px;
   padding: 20px 50px 20px 50px;
-  background-color: #c8c8c8;
+  background-color: #eaebeb;
   transition: .3s;
   -webkit-transition: .3s;
 
@@ -304,8 +304,7 @@ footer .author {
 
 a {
 
-  font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   color: #1A73E7;
 
@@ -1678,6 +1677,24 @@ nav.collapsing h1 {
   -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
   animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
   stroke-linecap: round;
+
+}
+
+.card {
+
+  padding: 15px 20px;
+  display: inline-block;
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #dadce0;
+  margin: 10px 0;
+
+}
+
+.card.flat {
+
+  border: 1px solid #e8eaed;
+  background-color: #e8eaed;
 
 }
 
