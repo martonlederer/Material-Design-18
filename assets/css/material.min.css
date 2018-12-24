@@ -3,13 +3,12 @@
   Licensed under the MIT license
  */
 
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons|Roboto:300,400,500");
 
 body {
 
   margin: 0;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial",sans-serif;
   font-weight: normal;
   background-color: #fff;
   overflow-x: hidden;
